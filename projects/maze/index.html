@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Enip Portfolio</title>
+  </head>
+  <body>
+    <div class="container navigation pt-3">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-start align-items-center">
+          <i class="fas fa-code fa-2x text-warning pb-3"></i>
+          <a href="#" class="pb-1"><h5 class="d-inline pl-2 text-white">Enip</h5></a>
+        </div>
+        <div class="col-6 pt-2">
+          <div
+            class="row text-center p-0 d-flex justify-content-end align-items-center"
+          >
+            <div class="col-3">
+              <a href="#about" class="text-white navigation-link">About</a>
+            </div>
+            <div class="col-3">
+              <a href="#projects" class="text-white navigation-link"
+                >Projects</a
+              >
+            </div>
+            <div class="col-3">
+              <a href="#social-media" class="text-white navigation-link"
+                >Social Media</a
+              >
+            </div>
+            <div class="col-3">
+              <a
+                href="https://packetcode.github.io/web-development-crash-course/resume-mini-project/"
+                target="_blank"
+                class="text-white navigation-link"
+                >Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Title -->
+    <div class="container main-container">
+        <div class="row main_row">
+            <h1 class="text-white pt-5 title-heading">Maze Generator and Path Finding</h1>
+        </div>
+    </div>
+
+    <!-- intro -->
+    <div class="container content">
+        <div class="row main_row pt-4">
+            <p class="text-muted">
+                Language : C/C++
+            </p>
+        </div>
+        <div class="row main_row pl-4 pr-4">
+            <p class="text-white">
+                Generate maze randomly:
+                <b class="text-warning">Recursive Division</b> and
+                <b class="text-warning">Kruskal</b> algorithms.
+            </p>
+        </div>
+        <div class="row main_row pl-4 pr-4">
+            <p class="text-white">
+                Path finding:
+                <b class="text-warning">Backtracking </b> ,
+                <b class="text-warning">Dijkstra</b> and
+                <b class="text-warning">Bellman-Ford</b> algorithms.
+            </p>
+        </div>
+        <hr>
+        <div class="row main_row text-white">
+
+                <div class="col-4 p-2">
+                    <div class="row">
+                        <p>
+                            Using <b class="text-warning">Kruskal</b> to generate maze.
+                        </p>
+
+
+                    </div>
+                    <div class="row">
+                        <p>
+                            Finding path with Backtracking.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                                Guarantee to get a perfect maze (without loop and only contains one solution).
+                        </p>
+                    </div>
+                    <div class="row">
+                        <a href="#" class="btn btn-warning">Source code</a>
+                    </div>
+
+                </div>
+                <div class="col-4 d-flex">
+                    <img class="img-fluid rounded" src="kruskal.png" alt="">
+                </div>
+
+        </div>
+        <hr/>
+        <div class="row main_row text-white">
+
+                <div class="col-4 p-2">
+                    <div class="row">
+                        <p>
+                            Using <b class="text-warning">Recursive Division</b> to generate maze.
+                        </p>
+
+
+                    </div>
+                    <div class="row">
+                        <p>
+                            Finding path with Backtracking.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            We can see the pattern of division and the road is border.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <a href="#" class="btn btn-warning">Source code</a>
+                    </div>
+
+                </div>
+                <div class="col-4 d-flex">
+                    <img class="img-fluid rounded" src="recurDivision.png" alt="">
+                </div>
+
+        </div>
+        <hr>
+        <div class="row main_row text-white">
+
+                <div class="col-4 p-2">
+                    <div class="row">
+                        <p>
+                            Using pre-build maze.
+                        </p>
+
+
+                    </div>
+                    <div class="row">
+                        <p>
+                            Finding path with  <b class="text-warning">Dijkstra</b> .
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            Calcuting the distance from beginning and keeping to relax.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <a href="#" class="btn btn-warning">Source code</a>
+                    </div>
+                    <div class="row pt-4">
+                        <img class="img-fluid rounded" src="dijkstra_code.png" alt="">
+                    </div>
+
+                </div>
+                <div class="col-4 d-flex">
+                    <img class="img-fluid rounded" src="dijkstra.png" alt="">
+                </div>
+
+        </div>
+        <hr>
+        <div class="row main_row text-white">
+
+                <div class="col-4 p-2">
+                    <div class="row">
+                        <p>
+                            Using pre-build maze.
+                        </p>
+
+
+                    </div>
+                    <div class="row">
+                        <p>
+                            Finding path with  <b class="text-warning">Bellman–Ford</b> .
+                        </p>
+                    </div>
+                    <div class="row">
+                        <p>
+                            Calcuting the distance of vertexs to each vertex.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <a href="#" class="btn btn-warning">Source code</a>
+                    </div>
+                    <div class="row pt-4">
+                        <img class="img-fluid rounded" src="bellman_code.png" alt="">
+                    </div>
+
+                </div>
+                <div class="col-4 d-flex">
+                    <img class="img-fluid rounded" src="bellman.png" alt="">
+                </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-muted text-center py-3 mt-5">
+        <h5>
+          Copyright &copy; 2020 |
+          <a class="text-warning text-decoration-none" href="#about"
+            >Enip</a
+          >
+        </h5>
+      </div>
+    </footer>
+  </body>
+</html>

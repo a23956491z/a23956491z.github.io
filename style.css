@@ -70,3 +70,12 @@ body {
   border: 2px solid #f5ba09;
   border-radius: 0.5rem;
 }
+
+.media_link a{
+    text-decoration: none;
+}
+
+#projects .card{
+    width: 18rem;
+
+}
