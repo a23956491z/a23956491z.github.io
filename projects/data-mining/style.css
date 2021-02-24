@@ -10,7 +10,7 @@ body {
 
 
 .main-container {
-  height: 12rem;
+  height: 20vh;
 }
 .main_row {
   display: flex;

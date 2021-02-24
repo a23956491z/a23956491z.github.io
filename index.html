@@ -30,51 +30,51 @@
     <title>Enip Portfolio</title>
   </head>
   <body>
-    <div class="container navigation pt-3">
-      <div class="row">
-        <div class="col-6 d-flex justify-content-start align-items-center">
-          <i class="fas fa-code fa-2x text-warning pb-3"></i>
-          <a href="" class="pb-1"><h5 class="d-inline pl-2 text-white">Enip</h5></a>
-        </div>
-        <div class="col-6 pt-2">
-          <div
-            class="row text-center p-0 d-flex justify-content-end align-items-center"
-          >
-            <div class="col-3">
-              <a href="#about" class="text-white navigation-link">About</a>
-            </div>
-            <div class="col-3">
-              <a href="#projects" class="text-white navigation-link"
-                >Projects</a
-              >
-            </div>
-            <div class="col-3">
-              <a href="#social-media" class="text-white navigation-link"
-                >Social Media</a
-              >
-            </div>
-            <div class="col-3">
-              <a
-                href="https://packetcode.github.io/web-development-crash-course/resume-mini-project/"
-                target="_blank"
-                class="text-white navigation-link"
-                >Resume</a
-              >
+      <div class="container navigation pt-3">
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-start align-items-center">
+            <i class="fas fa-code fa-2x text-warning pb-2"></i>
+            <a href="http://aboutenip.tk/" class="pb-1"><h5 class="d-inline pl-2 text-white ">Enip</h5></a>
+          </div>
+          <div class="d-none d-md-block col-8 col-md-6 pt-md-2">
+            <div
+              class="row text-center d-flex justify-content-end align-items-center"
+            >
+              <div class="col-3">
+                <a href="http://aboutenip.tk/#about" class="text-white navigation-link">About</a>
+              </div>
+              <div class="col-3">
+                <a href="http://aboutenip.tk/#projects" class="text-white navigation-link"
+                  >Projects</a
+                >
+              </div>
+              <div class="col-3">
+                <a href="http://aboutenip.tk/#social-media" class="text-white navigation-link"
+                  >Social Media</a
+                >
+              </div>
+              <div class="col-3">
+                <a
+                  href="https://packetcode.github.io/web-development-crash-course/resume-mini-project/"
+                  target="_blank"
+                  class="text-white navigation-link"
+                  >Resume</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
     <!-- Main Container -->
-    <div class="main-container container">
+    <div class="main-container container mt-4">
       <div class="row main_row">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <h2 class="text-white">Hello, I'm</h2>
           <h1 class="text-warning m-heading">Enip</h1>
           <h2 class="text-white">Student from NDHU</h2>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <img
             src="images/man.png"
             class="img-fluid"
@@ -86,10 +86,10 @@
     <!-- About Section -->
     <div id="about" class="container about p-5">
       <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-md-6">
           <img src="./images/about_img.svg" class="img-fluid" />
         </div>
-        <div class="col-6 pl-5 pt-5 pb-5 text-white">
+        <div class="col-12 col-md-6 pl-5 pt-5 pb-5 text-white">
           <h3 class="text-warning">About Me</h3>
           <h2 class="m-heading">Consistent Learner, keep going.</h2>
           <p>
@@ -114,9 +114,9 @@
 
     <!-- Projects Section -->
     <div id="projects" class="container mt-5 pt-5">
-      <h1 class="text-warning mb-3 pb-2">My Projects</h1>
+      <h1 class="text-warning mb-3 pb-2 d-flex justify-content-center">My Projects</h1>
       <div class="row">
-        <div class="col-4 mb-5">
+        <div class="col-12 col-md-4 mb-5  d-flex justify-content-center">
           <div class="card">
             <img
               src="./images/fintech_website.png"
@@ -133,7 +133,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 mb-5">
+        <div class="col-12 col-md-4 mb-5  d-flex justify-content-center">
           <div class="card">
             <img
               src="./images/fitness.svg"
@@ -150,7 +150,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 mb-5">
+        <div class="col-12 col-md-4 mb-5  d-flex justify-content-center">
           <div class="card">
             <img
               src="./images/maze.png"
@@ -159,7 +159,7 @@
               style="height: 13rem;"
             />
             <div class="card-body">
-              <h5 class="card-title">Maze generator</h5>
+              <h5 class="card-title">Maze Generator</h5>
               <p class="card-text">
                 Using kruskal and recursive division algorithms to randomly generate
                 and path finding with common algorithms.
@@ -168,24 +168,25 @@
             </div>
           </div>
         </div>
-        <div class="col-4 mb-5">
+        <div class="col-12 col-md-4 mb-5  d-flex justify-content-center">
           <div class="card">
             <img
-              src="./images/music.svg"
+              src="./images/data-mining.png"
               class="card-img-top"
               alt="..."
               style="height: 13rem;"
             />
             <div class="card-body">
-              <h5 class="card-title">Machine Learning Report</h5>
+              <h5 class="card-title">Data Mining Report</h5>
               <p class="card-text">
-                r
+                Analyze the performance of common data mining and machine learning algorithms
+                to wine dataset with parameter tuning.
               </p>
-              <a href="#" class="btn btn-warning">See Project</a>
+              <a href="projects/data-mining/index.html" class="btn btn-warning">See Project</a>
             </div>
           </div>
         </div>
-        <div class="col-4 mb-5">
+        <div class="col-12 col-md-4 mb-5  d-flex justify-content-center">
           <div class="card">
             <img
               src="./images/photography.svg"
@@ -202,7 +203,7 @@
             </div>
           </div>
         </div>
-        <div class="col-4 mb-5">
+        <div class="col-12 col-md-4 mb-5  d-flex justify-content-center">
           <div class="card">
             <img
               src="./images/web_scraping.svg"
@@ -226,11 +227,11 @@
     <div id="social-media" class="container-fluid">
       <div class="container text-white py-5">
         <h4 class="text-warning">Social Media</h4>
-        <div class="row pt-5">
-            <div class="col-6 btn text-white pt-2">
+        <div class="row pt-md-5">
+            <div class="col-12 col-md-6 btn text-white pt-2">
                 <h1 class="m-heading">Let's be friends</h1>
             </div>
-              <div class="col-3 media_link btn">
+              <div class="col-5 col-md-3 media_link btn">
                 <a href="https://github.com/a23956491z">
                     <div class="row">
                       <div class="col-6 d-flex justify-content-start">
@@ -243,7 +244,7 @@
                 </a>
               </div>
 
-              <div class="col-3 media_link bg-warning btn">
+              <div class="col-5 col-md-3 media_link bg-warning btn">
                 <a href="mailto:410821238@gms.ndhu.edu.tw?&subject=&cc=&bcc=&body=%0A">
                     <div class="row">
                       <div class="col-6 d-flex justify-content-start">

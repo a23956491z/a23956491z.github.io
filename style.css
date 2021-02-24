@@ -26,7 +26,17 @@ body {
 
 /* Main Container height*/
 .main-container {
-  height: 30vh;
+  height: 38vh;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-container {
+      height: 74vh;
+    }
+
+    .media_link {
+        font-size: 12px;
+    }
 }
 
 /* Aligning items in main row */
