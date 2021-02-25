@@ -2,7 +2,7 @@
 
 
 ## **Node**
-```cpp=
+```cpp
 /* default Node */
 typedef struct node {
           struct node * left;
@@ -16,7 +16,7 @@ typedef struct node {
 
 
 ## Type defines:
-```cpp=
+```cpp
 typedef int (*compare_fptr_t)(void*, void*);
 typedef void (*print_fptr_t)(void*);
 typedef void*(*alloc_fptr_t)(void*);
@@ -25,7 +25,7 @@ typedef void*(*getKey_fptr_t)(void*);
 
 ```
 ## Functions
-```cpp=
+```cpp
 /**
  * @details only link do link works,<br/>
  *            did not allocate memory inside and.

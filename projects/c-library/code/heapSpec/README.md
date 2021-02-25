@@ -1,6 +1,6 @@
 
 Heap的結構（**和原本一樣**）
-```cpp=
+```cpp
 typedef struct HeapType {
     void *elements; // element array
     int numElements; // number of elements
@@ -26,11 +26,11 @@ typedef struct PQ {
 
 
 ```cpp
-/* 
+/*
  * 建立一個 pq,
  * 其中 pqClass為此PQ的種類(MINHEAP or MAXHEAP)
  * 元素大小為 elementSize,
- * 最多元數個數為 maxSize 
+ * 最多元數個數為 maxSize
  */
 void createPQ(PQ_t *pq, H_class pqClass, int elementSize, int maxSize, compare_fptr cmp);
 
@@ -41,7 +41,7 @@ int IsFull(PQ_t *pq);
 /* add an element into PQ */
 int Enqueue(PQ_t * PQ, void* elementA);
 
-/* pop an element from PQ 
+/* pop an element from PQ
  * return the address of element in array
  * this pointer must take out it value right away
  * prevent from accidentally modify the array.

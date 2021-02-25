@@ -1,6 +1,6 @@
 
 # 基本結構
-```cpp=
+```cpp
 typedef struct avlnode{
     treeNode_t node;
     int height;
@@ -44,8 +44,8 @@ root可以放任何正確含入AVLNode_t的資料型別
 
 # 使用方式
 ```cpp=
-AVLTree_t* new_tree(compare_fptr_t compare, 
-                    compare_fptr_t keyNode_compare, 
+AVLTree_t* new_tree(compare_fptr_t compare,
+                    compare_fptr_t keyNode_compare,
                     swapKey_fptr_t swap);
 ```
 `new_tree`會回傳一個空的`AVLTree_t`，root不指向任何Node  
@@ -69,15 +69,15 @@ AVLTree_t* insert_node(AVLTree_t *tree, void *node);
 
 例如：
 ```cpp
-     
+
 AVLNode_t* new_node(int id, char[10] title){
     bookNode_t *tmp = (bookNode_t*)malloc(sizeof(bookNode_t));
     tmp->id = id;
     strcpy(tmp->title, title);
-    
+
     return (AVLNode_t*)tmp;
 }
-    
+
      AVLTree_t *tree = new_tree(cmp, cmp_key_node, swap);
      insert_node(tree, new_node(0, "tittle"));
 ```
